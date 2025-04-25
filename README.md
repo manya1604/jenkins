@@ -56,13 +56,13 @@ This project demonstrates a simple Python application with a complete CI/CD pipe
    ```bash
    docker-compose up -d
    ```
-![image](image1.jpg)
+
 
 2. Get initial admin password:
    ```bash
    docker-compose exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
    ```
-![image](image2.jpg)
+
 
 3. Access Jenkins:
    - Open browser and go to `http://localhost:8080`
@@ -94,9 +94,7 @@ This project demonstrates a simple Python application with a complete CI/CD pipe
      - Enter repository URL: `https://github.com/Aditya5757raj/Jenkins-CI-CD-Pipeline`
      - Enter branch specifier: `*/main`
      - Click "Save"
-![image](image3.jpg)
-![image](image4.jpg)
-![image](image5.jpg)
+
 
 
 8. Install and Configure Docker in Jenkins Container:
@@ -110,9 +108,6 @@ This project demonstrates a simple Python application with a complete CI/CD pipe
    # Verify Docker installation
    docker-compose exec jenkins docker --version
    ```
-![image](image6.png)
-![image](image7.png)
-![image](image8.png)
 
 9. Install Docker Plugins:
     - Go to "Manage Jenkins" > "Manage Plugins"
@@ -130,8 +125,7 @@ This project demonstrates a simple Python application with a complete CI/CD pipe
       # Then verify Jenkins is running
       docker-compose ps
       ```
-![image](image9.png)
-![image](image10.png)
+
 
 10. Sign in to Jenkins:
     - Use the credentials you created in step 5
@@ -150,7 +144,7 @@ This project demonstrates a simple Python application with a complete CI/CD pipe
    - Click on `add2vals` to download it to your local machine
 
    Note: The executable downloaded from Jenkins will be a Linux version since Jenkins runs in a Linux container.
-![image](image.png)
+
 
 2. To run the Linux executable on Windows using WSL:
    ```bash
@@ -233,17 +227,4 @@ This project demonstrates a complete CI/CD pipeline setup using Jenkins, Docker,
 3. Generated a distributable application that can run on any system
 
 ### Thank You
-Thank you for following this tutorial! We hope it has helped you understand:
-- How to set up a CI/CD pipeline with Jenkins
-- How to create standalone executables with PyInstaller
-- How to use Docker for containerization
-- How to automate Python application builds and tests
 
-Feel free to:
-- Star this repository if you found it helpful
-- Share it with others who might benefit
-- Contribute improvements or suggestions
-- Report any issues you encounter
-
-### Author
-Aditya Raj
